@@ -32,8 +32,8 @@ export default {
                             <img src="${image.imagen}"/>
 
 
-                        `+`<h1>${image.nombre}</h1>`+
-                        +`<h1 style="">${image.type_name}</h1>`+`</div>`
+                        `+`<h4>${image.nombre}</h4>`+
+                        `<span style="background-color: ${image.type_color}">${image.type_name}</span>`+`</div>`
                         div_imagenes.appendChild(div_imagen)
                     });
                 })
@@ -72,6 +72,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px;
-    background-color: burlywood ;
+   
     }
 </style>
