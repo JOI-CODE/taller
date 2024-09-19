@@ -29,7 +29,7 @@ export default {
                         const div_imagen = document.createElement("div");
                         console.log(image.image)
                         div_imagen.innerHTML = `<div class="joi">`+`
-                            <img src="${image.imagen}"/>
+                            <img class="imagen" src="${image.imagen}"/>
 
 
                         `+`<h4>${image.nombre}</h4>`+
@@ -69,9 +69,18 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     border: 3px;
    
     }
+    .joi {
+  width: 12rem;
+  z-index: 1;
+}
+.imagen {
+  height: 12rem;
+  object-fit: cover;
+  object-position: center center;
+  background: #EDEDED;
+  border-radius: 5px;
+}
 </style>
